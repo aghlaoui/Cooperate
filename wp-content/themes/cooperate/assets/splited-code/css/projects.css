@@ -1,0 +1,120 @@
+/* ------------------------------------
+	24. Project Section CSS
+---------------------------------------*/
+.rs-project .projects-no-content {
+    text-align: center;
+    margin: 14px;
+    border: 1px #e1e1e1 solid;
+    border-radius: 12px;
+    background-color: #f6f9fe;
+}
+
+.projects-no-content h3 span {
+    font-weight: 100;
+    color: #3e3e3e;
+}
+
+.rs-project .projects-no-content i {
+    font-size: 48px;
+}
+
+.rs-project.project-style6 .project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 1;
+}
+
+.rs-project.project-style6 .project-item .project-content .p-icon {
+    position: absolute;
+    z-index: 11;
+    margin: 0;
+    top: 25px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 50% 50% 50% 50% !important;
+    -webkit-transition: all ease 800ms;
+    opacity: 0;
+    visibility: hidden;
+    color: #091771;
+    background-color: #ffffff;
+}
+
+.rs-project.project-style6 .project-item .project-content .p-icon i {
+    font-size: 15px;
+}
+
+.rs-project.project-style6 .project-item .project-content .project-inner {
+    position: absolute;
+    z-index: 11;
+    margin: 0;
+    bottom: 40px;
+    left: -40px;
+    padding: 30px;
+    transition: all ease 300ms;
+    -webkit-transition: all ease 300ms;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.rs-project.project-style6 .project-item .project-content .project-inner .title {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.rs-project.project-style6 .project-item .project-content .project-inner .title a {
+    color: #ffffff;
+}
+
+.rs-project.project-style6 .project-item .project-content .project-inner .title a:hover {
+    color: #1a73e9;
+}
+
+.rs-project.project-style6 .project-item .project-content .project-inner .category a {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #ffffff;
+    display: block;
+}
+
+.rs-project.project-style6 .project-item .project-content .project-inner .category a:hover {
+    color: #1a73e9;
+}
+
+.rs-project.project-style6 .project-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #183760;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease 0s;
+}
+
+.rs-project.project-style6 .project-item:hover .project-content .p-icon {
+    opacity: 1;
+    visibility: visible;
+    right: 25px;
+}
+
+.rs-project.project-style6 .project-item:hover .project-content .project-inner {
+    bottom: 40px;
+    left: 0 !important;
+    opacity: 1;
+    visibility: visible;
+}
+
+.rs-project.project-style6 .project-item:hover:before {
+    opacity: 1;
+    visibility: visible;
+}

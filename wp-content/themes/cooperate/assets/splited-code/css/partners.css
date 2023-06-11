@@ -1,0 +1,58 @@
+/*------------------------------------
+	22. Partner Section CSS
+------------------------------------*/
+
+.rs-partner.partner-style2 {
+    z-index: 111;
+}
+
+.rs-partner.partner-style2 .partner-bg-overlay {
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -111;
+}
+
+.rs-partner.partner-style2 .partner-item {
+    padding: 80px 80px 80px 80px;
+    margin: 0px 0px 0px 0px;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    background-color: #FFFFFF;
+}
+
+.rs-partner.partner-style2 .partner-item .logo-img {
+    text-align: center;
+}
+
+.rs-partner.partner-style2 .partner-item .logo-img a {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.rs-partner.partner-style2 .partner-item .logo-img a .hovers-logos {
+    display: none;
+}
+
+.rs-partner.partner-style2 .partner-item .logo-img a .mains-logos {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+    filter: blur(0px);
+}
+
+.rs-partner.partner-style2 .partner-item:hover .logo-img a .mains-logos {
+    opacity: 0.6;
+    filter: blur(0.2px);
+}
+
+.rs-partner.partner-style2 .logo-grid-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    border-right: 1px solid rgba(0, 0, 0, 0.04);
+}

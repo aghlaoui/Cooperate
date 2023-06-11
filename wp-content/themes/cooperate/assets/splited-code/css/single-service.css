@@ -1,0 +1,190 @@
+/* ------------------------------------
+	18. Services Section CSS
+---------------------------------------*/
+.rs-services-details .container .service-no-content {
+    text-align: center;
+    margin: 14px;
+    border: 1px #e1e1e1 solid;
+    border-radius: 12px;
+    background-color: #f6f9fe;
+}
+
+.rs-services-details .container .service-no-content i {
+    font-size: 48px;
+}
+
+
+.rs-services-details .annual-report {
+    background-color: #f6f9fe;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #1A73E91A;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 18px;
+    margin-bottom: 0px;
+    padding: 0px 20px 30px 20px;
+    text-align: center;
+}
+
+.rs-services-details .annual-report .content-txt .title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #080d41;
+    margin: 20px 0px 20px 0px;
+}
+
+.rs-services-details .let-talk-part {
+    /* background-image: url(assets/images/services/services-details/sidebar-bg.png); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px 5px 5px 5px;
+    padding: 20px 17px 124px 10px;
+}
+
+.rs-services-details .let-talk-part .content-wrap {
+    padding: 10px 10px 10px 10px;
+}
+
+.rs-services-details .let-talk-part .content-wrap .title {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0px 0px 5px 0px;
+}
+
+.rs-services-details .let-talk-part .content-wrap .desc {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 0px 0px 2px 0px;
+}
+
+/* ------------------------------------
+	19. Faq Section CSS
+---------------------------------------*/
+
+.rs-faq.faq-style1 .faq-content .accordion {
+    border-width: 12px;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card {
+    margin-bottom: 15px;
+    border: none;
+    padding: 0px 0px 10px 0px;
+    border-style: solid;
+    border-width: 0px 0px 0.5px 0px;
+    border-color: #3E3E3E1C;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #FFFFFF;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card:last-child {
+    margin-bottom: 0 !important;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-header {
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+    border: none;
+    background-color: unset;
+    border-radius: unset;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-header .card-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 5px 0px 0 0px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0092f2;
+    background: unset;
+    box-shadow: unset;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-header .card-link:after {
+    font-family: FontAwesome;
+    position: absolute;
+    content: "\f0d7";
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 20px;
+    color: #0092f2;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-header .card-link.collapsed {
+    color: #080d41;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-header .card-link.collapsed:after {
+    color: #080d41;
+    content: "\f0d8";
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-body {
+    font-size: 16px;
+    color: #3e3e3e;
+    padding: 0 8px 15px 0px !important;
+    width: 100%;
+}
+
+.rs-faq.faq-style1.faq-modify8 .faq-content .accordion .card {
+    font-size: 22px;
+    font-weight: 700;
+    color: #00204A;
+    padding: 21px 0px 21px 20px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #F6F9FE;
+    border-color: #F6F9FE;
+}
+
+.rs-faq.faq-style1.faq-modify8 .faq-content .accordion .card .card-body {
+    font-size: 18px;
+    color: #656567;
+    font-weight: 400;
+    padding: 10px 42px 0px 0px !important;
+}
+
+.rs-faq.faq-style1.faq-modify8 .faq-content .accordion .card .card-header .card-link:after {
+    border-radius: 50px 50px 50px 50px;
+    width: 30px;
+    height: 30px;
+    line-height: 33px;
+    content: "\f068";
+    right: 31px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 13px;
+    color: #0092f2;
+    background-color: #E0ECFC;
+}
+
+.rs-faq.faq-style1.faq-modify8 .faq-content .accordion .card .card-header .card-link {
+    padding: 0px 0px 0 0px;
+    height: 35px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0092f2;
+    background: unset;
+    box-shadow: unset;
+}
+
+.rs-faq.faq-style1.faq-modify8 .faq-content .accordion .card .card-header .card-link.collapsed {
+    color: #080d41;
+}
+
+.rs-faq.faq-style1.faq-modify8 .faq-content .accordion .card .card-header .card-link.collapsed:after {
+    content: "\f067";
+    color: #fff;
+    background-color: #0092f2;
+}

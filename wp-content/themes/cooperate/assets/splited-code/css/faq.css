@@ -1,0 +1,668 @@
+/* ------------------------------------
+	19. Faq Section CSS
+---------------------------------------*/
+
+.rs-faq.faq-style1 .faq-content .accordion {
+    border-width: 12px;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card {
+    margin-bottom: 15px;
+    border: none;
+    padding: 0px 0px 10px 0px;
+    border-style: solid;
+    border-width: 0px 0px 0.5px 0px;
+    border-color: #3E3E3E1C;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #FFFFFF;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card:last-child {
+    margin-bottom: 0 !important;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-header {
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+    border: none;
+    background-color: unset;
+    border-radius: unset;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-header .card-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 5px 0px 0 0px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0092f2;
+    background: unset;
+    box-shadow: unset;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-header .card-link:after {
+    font-family: FontAwesome;
+    position: absolute;
+    content: "\f0d7";
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 20px;
+    color: #0092f2;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-header .card-link.collapsed {
+    color: #080d41;
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-header .card-link.collapsed:after {
+    color: #080d41;
+    content: "\f0d8";
+}
+
+.rs-faq.faq-style1 .faq-content .accordion .card .card-body {
+    font-size: 16px;
+    color: #3e3e3e;
+    padding: 0 8px 15px 0px !important;
+    width: 100%;
+}
+
+
+
+.rs-faq.faq-style1.faq-modify7 .faq-content .accordion .card {
+    margin-bottom: 15px;
+    padding: 0px 0px 10px 0px;
+    border-style: solid;
+    border-width: unset;
+    border-color: #3E3E3E1C;
+    border-radius: 0px 0px 0px 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.rs-faq.faq-style1.faq-modify7 .faq-content .accordion .card .card-body {
+    background-color: #fff;
+    padding: 0 30px 30px 30px !important;
+}
+
+.rs-faq.faq-style1.faq-modify7 .faq-content .accordion .card .card-header .card-link {
+    background-color: #fff;
+    color: #080D41;
+    padding: 20px 30px 0 30px;
+    border-radius: 5px;
+    height: 71px;
+}
+
+.rs-faq.faq-style1.faq-modify7 .faq-content .accordion .card .card-header .card-link:after {
+    right: 25px;
+    color: #1a73e9;
+}
+
+.rs-faq.faq-style1.faq-modify7 .accordion .card .card-header .card-link.collapsed:after {
+    color: #080d41;
+}
+
+.rs-faq.faq-style1.faq-modify7 .faq-content .accordion .card .card-header .card-link.collapsed {
+    background-color: #fff !important;
+    border-radius: 5px;
+}
+
+
+.rs-contact.contact-style4 .contact-wrap {
+    background-color: transparent;
+    padding: 54px 47px 54px 47px;
+    background-image: linear-gradient(180deg, #080d41 0%, #080d41 100%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.rs-contact.contact-style4 .contact-wrap .wpcf7-form-control-wrap {
+    display: block;
+    position: relative;
+}
+
+.rs-contact.contact-style4 .contact-wrap .wpcf7-form-control-wrap i {
+    position: absolute;
+    left: 23px;
+    top: 16px;
+    font-size: 20px;
+    z-index: 11;
+    color: #868383;
+}
+
+.rs-contact.contact-style4 .contact-wrap .wpcf7-form-control-wrap .from-control {
+    padding: 20px 30px 20px 50px;
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #0A136E87;
+    color: #fff;
+    background-color: #F7F8FB1F;
+    max-width: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.rs-contact.contact-style4 .contact-wrap .wpcf7-form-control-wrap textarea {
+    height: 160px;
+}
+
+.rs-contact.contact-style4 .contact-wrap .wpcf7-form-control-wrap ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+
+    color: #868383;
+    opacity: 0.79;
+}
+
+.rs-contact.contact-style4 .contact-wrap .wpcf7-form-control-wrap ::-moz-placeholder {
+    /* Firefox 19+ */
+
+    color: #868383;
+    opacity: 0.79;
+}
+
+.rs-contact.contact-style4 .contact-wrap .wpcf7-form-control-wrap :-ms-input-placeholder {
+    /* IE 10+ */
+
+    color: #868383;
+    opacity: 0.79;
+}
+
+.rs-contact.contact-style4 .contact-wrap .wpcf7-form-control-wrap :-moz-placeholder {
+    /* Firefox 18- */
+
+    color: #868383;
+    opacity: 0.79;
+}
+
+.rs-contact.contact-style4 .contact-info {
+    padding: 50px 40px 50px 60px;
+    background-image: linear-gradient(240deg, #ffffff 34%, #d9daff 100%);
+}
+
+.rs-contact.contact-style4 .contact-info .address-item {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.rs-contact.contact-style4 .contact-info .address-item .address-icon {
+    margin-right: 25px;
+}
+
+.rs-contact.contact-style4 .contact-info .address-item .address-icon i {
+    font-size: 40px;
+    top: -6px !important;
+    position: relative;
+    color: #126ee8;
+}
+
+.rs-contact.contact-style4 .contact-info .address-item .address-text .label {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #3e3e3e;
+    display: block;
+}
+
+.rs-contact.contact-style4 .contact-info .address-item .address-text .desc {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #3e3e3e;
+    margin: 0;
+}
+
+.rs-contact.contact-style4.contact-modify1 .contact-wrap {
+    background-image: unset;
+    padding: 54px 40px 54px 40px;
+    background-color: #F6F9FE;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.rs-contact.contact-style4.contact-modify1 .contact-wrap .wpcf7-form-control-wrap .from-control {
+    padding: 15px 30px 15px 50px;
+    border-color: #fff;
+    color: #000;
+    background-color: #fff;
+}
+
+.rs-contact.contact-style4.contact-modify1 .contact-wrap .wpcf7-form-control-wrap i {
+    top: 12px;
+}
+
+.rs-contact.contact-style4.contact-modify2 .contact-wrap {
+    background-image: unset;
+    padding: 54px 40px 54px 40px;
+    background-color: #1a73e9;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.rs-contact.contact-style4.contact-modify2 .contact-wrap ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+
+    color: #ffffff;
+    opacity: 0.57;
+}
+
+.rs-contact.contact-style4.contact-modify2 .contact-wrap ::-moz-placeholder {
+    /* Firefox 19+ */
+
+    color: #ffffff;
+    opacity: 0.57;
+}
+
+.rs-contact.contact-style4.contact-modify2 .contact-wrap :-ms-input-placeholder {
+    /* IE 10+ */
+
+    color: #ffffff;
+    opacity: 0.57;
+}
+
+.rs-contact.contact-style4.contact-modify2 .contact-wrap :-moz-placeholder {
+    /* Firefox 18- */
+
+    color: #ffffff;
+    opacity: 0.57;
+}
+
+.rs-contact.contact-style4.contact-modify2 .contact-wrap .wpcf7-form-control-wrap .from-control {
+    padding: 15px 30px 15px 25px;
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF26;
+    background-color: #FFFFFF00;
+}
+
+
+/*------------------------------------
+	23. Pricing Section CSS
+------------------------------------*/
+.pricing-container.pricing-style1 .pricing-switcher {
+    text-align: center;
+}
+
+.pricing-container.pricing-style1 .pricing-switcher .switch {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    height: 45px;
+    width: 90px;
+    background-color: #0092f2;
+    border-radius: 50px;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+
+.pricing-container.pricing-style1 .pricing-switcher .fieldset {
+    display: inline-block;
+    position: relative;
+    padding: 20px 8px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 1, 0.05);
+    background: #fff;
+    width: 100%;
+    max-width: 205px;
+}
+
+.pricing-container.pricing-style1 .pricing-switcher .fieldset.mnt-ac .rs-mnt,
+.pricing-container.pricing-style1 .pricing-switcher .fieldset.mnt-acs .rs-yrs {
+    color: #fff !important;
+}
+
+.pricing-container.pricing-style1 .pricing-switcher input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.pricing-container.pricing-style1 .pricing-switcher label {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    font-size: 18px;
+    color: #3E3E3E;
+    font-weight: 500;
+    margin: 0;
+    width: 50%;
+}
+
+.pricing-container.pricing-style1 .no-js .pricing-wrapper .is-hidden {
+    position: relative;
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    margin-top: 1em;
+}
+
+.pricing-container.pricing-style1 .no-js .pricing-switcher {
+    display: none;
+}
+
+.pricing-container.pricing-style1 .pricing-header {
+    position: relative;
+    padding: 30px 0 25px;
+}
+
+.pricing-container.pricing-style1 .pricing-header .title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #080D41;
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+.pricing-container.pricing-style1 .pricing-header .price-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.pricing-container.pricing-style1 .pricing-header .price-inner .price {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 700;
+    color: #0092f2;
+}
+
+.pricing-container.pricing-style1 .pricing-header .price-inner span {
+    position: relative;
+    top: -7px;
+    margin-left: 10px;
+    color: #080D41;
+    opacity: 1;
+}
+
+.pricing-container.pricing-style1 .pricing-header .price-inner:after {
+    content: "";
+    position: absolute;
+    background-color: #28544B17;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.pricing-container.pricing-style1 .pricing-body {
+    padding: 0px 35px 15px 35px;
+}
+
+.pricing-container.pricing-style1 .pricing-body .features {
+    margin-top: 30px;
+}
+
+.pricing-container.pricing-style1 .pricing-body .features ul li {
+    position: relative;
+    font-size: 18px;
+    line-height: 28px;
+    color: #656567;
+    padding-right: 36px;
+    margin: 15px 0;
+    transition: all 0.5s ease;
+}
+
+.pricing-container.pricing-style1 .pricing-body .features ul li:before {
+    content: "\eb80";
+    color: #0092f2;
+    margin: 0;
+    display: inline-block;
+    font-family: remixicon;
+    position: absolute;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.pricing-container.pricing-style1 .pricing-body .features ul li.close-icon:before {
+    content: "\eb97";
+    opacity: 0.6;
+    color: #353535;
+}
+
+.pricing-container.pricing-style1 .pricing-footer {
+    margin: 0px 35px 0px 35px;
+}
+
+.pricing-container.pricing-style1 .pricing-footer a {
+    display: inline-block;
+    border: 2px solid #0092f2;
+    font-size: 18px;
+    line-height: 28px;
+    color: #0092f2;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 50px 50px 50px 50px;
+    padding: 17px 15px 15px 15px;
+    text-align: center;
+}
+
+.pricing-container.pricing-style1 .pricing-wrapper>li:hover .pricing-footer a {
+    background: #0092f2;
+    color: #ffffff;
+    border: 2px solid #0092f2;
+}
+
+.pricing-container.pricing-style1 .pricing-list {
+    margin: 2em 0 0;
+    list-style: none;
+}
+
+.pricing-container.pricing-style1 .pricing-list>li {
+    position: relative;
+}
+
+.pricing-container.pricing-style1 .pricing-body {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.pricing-container.pricing-style1 .pricing-wrapper {
+    position: relative;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.pricing-container.pricing-style1 .pricing-wrapper.is-switched.reverse-animation .is-visible {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-animation: rotate-back 0.5s;
+    -moz-animation: rotate-back 0.5s;
+    animation: rotate-back 0.5s;
+}
+
+.pricing-container.pricing-style1 .pricing-wrapper.is-switched.reverse-animation .is-hidden {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-animation: rotate-inverse-back 0.5s;
+    -moz-animation: rotate-inverse-back 0.5s;
+    animation: rotate-inverse-back 0.5s;
+    opacity: 0;
+}
+
+.pricing-container.pricing-style1 .pricing-wrapper.is-switched.reverse-animation .is-selected {
+    opacity: 1;
+}
+
+.pricing-container.pricing-style1 .pricing-wrapper>li {
+    background-color: #ffffff;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.03);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 30px;
+    padding: 20px 30px 50px;
+}
+
+.pricing-container.pricing-style1 .pricing-wrapper>li:hover {
+    box-shadow: 20px 20px 40px rgba(0, 0, 1, 0.05);
+}
+
+.pricing-container.pricing-style1 .pricing-wrapper .is-visible {
+    position: relative;
+    z-index: 5;
+}
+
+.pricing-container.pricing-style1 .pricing-wrapper .is-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.pricing-container.pricing-style1 .pricing-wrapper .is-selected {
+    z-index: 3 !important;
+}
+
+.pricing-container.pricing-style1 .is-switched .pricing-body {
+    overflow: hidden;
+}
+
+.pricing-container.pricing-style1 .pricing-body {
+    overflow-x: visible;
+}
+
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-switcher {
+    position: relative;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-switcher label {
+    font-weight: 400;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-header .price-inner {
+    justify-content: flex-start;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-header .title {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 600;
+    margin: 0 0 15px;
+    text-align: left;
+    color: #183760;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-footer {
+    margin: 0px 5px 15px 5px;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-body {
+    padding: 0px 5px 15px 5px;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-wrapper {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-switcher .fieldset {
+    position: absolute;
+    top: -90px;
+    right: 18%;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-switcher .switch {
+    background-color: #1a73e9;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-body .features ul li:before,
+.pricing-container.pricing-style1.pricing-modify2 .pricing-header .price-inner .price {
+    color: #1a73e9;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-body .features ul li.close-icon:before {
+    color: #353535;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-footer a {
+    border: 1px solid #1a73e9;
+    color: #1a73e9;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-wrapper>li:hover .pricing-footer a {
+    background: #1a73e9;
+    color: #ffffff;
+    border: 1px solid #1a73e9;
+}
+
+.pricing-container.pricing-style1.pricing-modify2 .pricing-body .features ul li {
+    font-size: 18px;
+    line-height: 28px;
+    color: #3a3a3a;
+}
+
+.pricing-container.pricing-style1.pricing-modify2.inner-pricing1 .pricing-switcher .fieldset {
+    top: -124px;
+}
+
+.pricing-switcher input[type="radio"]:checked+label+.switch,
+.pricing-switcher input[type="radio"]:checked+label:nth-of-type(n)+.switch {
+    -webkit-transform: translateX(95px);
+    -moz-transform: translateX(95px);
+    -ms-transform: translateX(95px);
+    -o-transform: translateX(95px);
+    transform: translateX(95px);
+    color: #fff;
+}
+
+.pricing-switcher .fieldset {
+    display: inline-block;
+    position: relative;
+    padding: 20px 8px;
+    border-radius: 15px;
+    background: #fff;
+    width: 100%;
+    max-width: 205px;
+}
+
+.pricing-switcher .fieldset.mnt-ac .rs-mnt,
+.pricing-switcher .fieldset.mnt-acs .rs-yrs {
+    color: #fff !important;
+}
+
+.pricing-switcher input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.pricing-switcher label {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    font-size: 16px;
+    color: #3E3E3E;
+    font-weight: 400;
+    margin: 0;
+    width: 50%;
+}
+
+.no-js .pricing-switcher {
+    display: none;
+}

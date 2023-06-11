@@ -1,0 +1,78 @@
+/* ------------------------------------
+	08. Breadcrumbs Section CSS
+---------------------------------------*/
+.rs-breadcrumbs {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: top left !important;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner {
+    padding: 160px 10px 150px 10px;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .page-title {
+    font-size: 65px;
+    line-height: 75px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .des {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .breadcrumbs-area {
+    background-color: #FFFFFF1F;
+    margin: 0px 0px 0px 0px;
+    padding: 7px 12px 7px 12px;
+    display: inline-block;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .breadcrumbs-area li {
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .breadcrumbs-area li a {
+    position: relative;
+    color: #ffffff;
+    padding: 0px 15px 0px 0px;
+    transition: all .3s;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .breadcrumbs-area li a:before {
+    content: "\ea6c";
+    position: absolute;
+    font-family: remixicon !important;
+    font-size: 16px;
+    top: -4px;
+    right: -8px;
+    opacity: 1;
+    transition: all .3s;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .breadcrumbs-area li a:hover {
+    color: #ccc;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner .breadcrumbs-area li:last-child {
+    margin-right: 0;
+}
+
+.rs-breadcrumbs .breadcrumbs-inner.breadcrumbs-style1 {
+    max-width: 680px;
+}
+
+.rs-breadcrumbs.img1 {
+    background-position: center !important;
+}

@@ -1,0 +1,109 @@
+/* ------------------------------------
+	15. Contact Section CSS
+---------------------------------------*/
+
+.rs-contact.contact-style6 .address-boxs {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.rs-contact.contact-style6 .address-boxs .address-icon {
+    margin-right: 28px;
+    background-color: #126ee8;
+    width: 78px;
+    min-width: 78px;
+    max-width: 78px;
+    line-height: 72px;
+    height: 70.1px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rs-contact.contact-style6 .address-boxs .address-icon i:before {
+    font-size: 26px;
+    line-height: 30px;
+    color: #ffffff;
+    top: 4px;
+    position: relative;
+}
+
+.rs-contact.contact-style6 .address-boxs .address-text .text .label {
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #656567;
+    text-transform: uppercase;
+    display: block;
+}
+
+.rs-contact.contact-style6 .address-boxs .address-text .text .des {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #282525;
+}
+
+.rs-contact.contact-style6 .contact-wrap {
+    background-color: #126ee8;
+    padding: 45px 40px 60px 40px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.rs-contact.contact-style6 .contact-wrap .wpcf7-form-control-wrap {
+    display: block;
+    position: relative;
+}
+
+.rs-contact.contact-style6 .contact-wrap .wpcf7-form-control-wrap i {
+    position: absolute;
+    left: 23px;
+    top: 10px;
+    font-size: 18px;
+    color: rgba(69, 69, 69, 0.7411764706);
+    z-index: 11;
+    transition: all 0.3s ease;
+}
+
+.rs-contact.contact-style6 .contact-wrap .wpcf7-form-control-wrap .select-arrow {
+    position: relative;
+    padding: 12.5px 15px 12.5px 50px;
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #1A73E933;
+    color: #3A3A3ACC !important;
+    background-color: #F7F7F7E6;
+    width: 100%;
+    cursor: pointer;
+}
+
+.rs-contact.contact-style6 .contact-wrap .wpcf7-form-control-wrap .from-control {
+    padding: 12.5px 15px 12.5px 50px;
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #1A73E933;
+    color: #3A3A3ACC !important;
+    background-color: #F7F7F7E6;
+    width: 100%;
+}
+
+.rs-contact.contact-style6 .contact-wrap .wpcf7-form-control-wrap textarea {
+    height: 120px;
+}
+
+.rs-contact.contact-style6 .contact-wrap .wpcf7-form-control-wrap:hover i {
+    color: #306c62;
+}
+
+.rs-contact.contact-style6 .map-canvas {
+    overflow: hidden;
+}
+
+.rs-contact.contact-style6 .map-canvas iframe {
+    height: 400px;
+    float: left;
+    width: 100%;
+    border: none;
+}
