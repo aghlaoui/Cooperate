@@ -15,7 +15,7 @@
                         the_row();
                         $link = esc_url(get_sub_field('link'));
                         $icon = sanitize_text_field(get_sub_field('platform'));
-                        printf('<li><a href="%s"><i class="fa fa-%s"></i></a></li>', $link, $icon);
+                        printf('<li><a href="%s"><i class="fa fa-%s" aria-label="%s"></i></a></li>', $link, $icon, $icon);
                     }
                     ?>
 

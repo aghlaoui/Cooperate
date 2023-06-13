@@ -4,9 +4,34 @@
             <div class="col-cell header-logo">
                 <div class="logo-area">
                     <a href="<?php echo home_url() ?>" aria-label="Logo">
-                        <?php $logo = esc_url(get_theme_mod('site_logo')); ?>
-                        <img class="normal-logo" src="<?php echo $logo ?>" alt="logo">
-                        <img class="sticky-logo" src="<?php echo $logo ?>" alt="logo">
+                        <?php
+                        $logo = esc_url(get_theme_mod('site_logo'));
+                        $attachement_id = ($logo) ? attachment_url_to_postid($logo) : '';
+                        $image = fly_get_attachment_image_src($attachement_id, 'logoHeader')['src'];
+                        $image1200 = fly_get_attachment_image_src($attachement_id, 'logoHeader1200')['src'];
+                        $alt_text = sanitize_text_field(get_post_meta($attachement_id, '_wp_attachment_image_alt', true));
+
+                        printf(
+                            '<img class="normal-logo" src="%s" 
+                                        srcset="%s 133w, %s 105w"
+                                        sizes="(min-width: 1200px) 105px, 100vw" 
+                                        alt="%s">',
+                            $image,
+                            $image,
+                            $image1200,
+                            $alt_text
+                        );
+                        printf(
+                            '<img class="sticky-logo" src="%s" 
+                                        srcset="%s 133w, %s 105w"
+                                        sizes="(min-width: 1200px) 105px, 100vw" 
+                                        alt="%s">',
+                            $image,
+                            $image,
+                            $image1200,
+                            $alt_text
+                        )
+                        ?>
                     </a>
                 </div>
             </div>
@@ -51,7 +76,7 @@
                         <li class="address-box">
                             <div class="address-item">
                                 <div class="address-icon">
-                                    <img src="<?php echo get_theme_file_uri('assets/img/bubble-chat-1.png') ?>" alt="">
+                                    <img src="<?php echo get_theme_file_uri('assets/img/bubble-chat-1.webp') ?>" alt="">
                                 </div>
                                 <div class="address-text">
                                     <span class="label"><?php __('Free Consultancy', 'cooperate') ?></span>

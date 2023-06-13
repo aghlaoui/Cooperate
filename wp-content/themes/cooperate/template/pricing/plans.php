@@ -1,5 +1,5 @@
 <?php $style = ($args['bg'] == true) ? ' style="background-image: url(' . get_theme_file_uri('assets/img/price-new-bg11.jpg') . ');"' : ''; ?>
-<div class="pricing-container rs-pricing-container pricing-style1 pricing-modify2 inner-pricing1 pt-140 pb-140 md-pt-80 md-pb-80" <?php echo $style ?>>
+<div class="<?php echo (is_front_page()) ? 'home-pricing ' : '' ?>pricing-container rs-pricing-container pricing-style1 pricing-modify2 inner-pricing1 pt-140 pb-140 md-pt-80 md-pb-80" <?php echo $style ?>>
     <div class="container">
         <div class="sec-title mb-50">
             <h2 class="title title11">
@@ -68,7 +68,7 @@
                                         <h3 class="title"><?php echo $plans[$j]['plans_names'] ?></h3>
                                         <div class="price-inner">
                                             <div class="price"><?php echo esc_html(get_sub_field('plan_price')) ?></div>
-                                            <span>MAD/ Month</span>
+                                            <span>MAD/ <?php echo sanitize_text_field(get_sub_field('plan_type')) ?></span>
                                         </div>
                                     </header>
                                     <div class="pricing-body">
@@ -94,7 +94,8 @@
                                         </div>
                                     </div>
                                     <footer class="pricing-footer">
-                                        <a href="<?php echo esc_url(site_url('contact-us')) ?>"><?php echo __('Get Started', 'cooperate') ?></a>
+                                        <?php $contact_url = site_url('contact-us') . '?plan=' . $plans[$j]['plans_names'] . '&type=' . get_sub_field('plan_type'); ?>
+                                        <a href="<?php echo esc_url($contact_url) ?>"><?php echo __('Get Started', 'cooperate') ?></a>
                                     </footer>
                                 </li>
                                 <?php $k++; ?>

@@ -11,7 +11,7 @@ get_template_part('template/footer/newsletter');
 <!-- Main content End -->
 
 <!-- Footer Start -->
-<footer id="rs-footer" class="rs-footer footer-main-home footer-style1" style="background-image: url(<?php echo get_theme_file_uri('assets/img/footer-main.jpg') ?>);">
+<footer id="rs-footer" class="rs-footer footer-main-home footer-style1" style="background-image: url(<?php echo get_theme_file_uri('assets/img/footer-main.webp') ?>);">
     <?php
     /**
      * Footer Top Section

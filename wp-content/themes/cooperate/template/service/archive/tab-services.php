@@ -1,28 +1,5 @@
-<style>
-    .bg18 {
-        background-image: url(https://business.local/wp-content/uploads/2023/05/services-bg11-1520x800.jpg);
-    }
-
-    @media screen and (max-width: 1195px) {
-        .bg18 {
-            background-image: url(https://business.local/wp-content/uploads/2023/05/services-bg11-1182x800.jpg);
-        }
-    }
-
-    @media screen and (max-width: 991px) {
-        .bg18 {
-            background-image: url(https://business.local/wp-content/uploads/2023/05/services-bg11-974x800.jpg);
-        }
-    }
-
-    @media screen and (max-width: 765px) {
-        .bg18 {
-            background-image: url(https://business.local/wp-content/uploads/2023/05/services-bg11-750x800.jpg);
-        }
-    }
-</style>
 <?php $query = $args['query'] ?>
-<div class="rs-services bg18 pt-140 pb-140 md-pt-80 md-pb-80">
+<div class="rs-services bg18 pt-140 pb-140 md-pt-80 md-pb-80" style="background-image: url(<?php echo get_theme_file_uri('assets/img/services-bg11.webp') ?>);">
     <div class="container">
         <div class="rs-tab-main tab-style2">
             <div class="tab-main-wrap">

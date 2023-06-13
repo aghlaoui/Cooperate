@@ -35,10 +35,13 @@
         });
     }
 
-    //preloader
+    // //preloader
+    // $(window).on('load', function () {
+    //     $("#pre-load").fadeOut("slow");
+    // })
     $(window).on('load', function () {
-        $("#pre-load").delay(600).fadeOut(500);
-        $(".pre-loader").delay(600).fadeOut(500);
+        // $("#pre-load").fadeOut("slow");
+        // $(".pre-loader").delay(600).fadeOut(500);
 
         if ($(window).width() < 992) {
             $('.rs-menu').css('height', '0');

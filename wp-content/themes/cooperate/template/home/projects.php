@@ -1,6 +1,6 @@
 <?php if (get_field('home_projects_activate_section', $args['id'])) : ?>
     <div class="rs-project project-style1 project-modify3">
-        <div class="project-overlay bg19" style="background-image: url(<?php echo get_theme_file_uri('assets/img/projects-background.jpg') ?>);">
+        <div class="project-overlay bg19" style="background-image: url(<?php echo get_theme_file_uri('assets/img/projects-background.webp') ?>);">
             <div class="container">
                 <div class="sec-title mb-50">
                     <h2 class="title white-color">

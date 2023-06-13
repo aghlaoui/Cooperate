@@ -3,7 +3,7 @@
     <div class="cta-box">
         <div class="row">
             <div class="col-lg-6">
-                <div class="box-item bg23" style="background-image: url(<?php echo get_theme_file_uri('assets/img/cta-box-bg-img.jpg') ?>);"></div>
+                <div class="box-item bg23" style="background-image: url(<?php echo get_theme_file_uri('assets/img/cta-box-bg-img.webp') ?>);"></div>
             </div>
         </div>
     </div>
@@ -22,19 +22,19 @@
                         $color = esc_html(get_sub_field('color'));
                         switch ($color) {
                             case 'red':
-                                $bg_color = get_theme_file_uri('assets/img/count-b4.jpg');
+                                $bg_color = get_theme_file_uri('assets/img/count-b4.webp');
                                 break;
                             case 'blue':
-                                $bg_color = get_theme_file_uri('assets/img/count-b3.jpg');
+                                $bg_color = get_theme_file_uri('assets/img/count-b3.webp');
                                 break;
                             case 'light-blue':
-                                $bg_color = get_theme_file_uri('assets/img/count-b1.jpg');
+                                $bg_color = get_theme_file_uri('assets/img/count-b1.webp');
                                 break;
                             case 'strong-blue':
-                                $bg_color = get_theme_file_uri('assets/img/count-b2.jpg');
+                                $bg_color = get_theme_file_uri('assets/img/count-b2.webp');
                                 break;
                             default:
-                                $bg_color = get_theme_file_uri('assets/img/count-b2.jpg');
+                                $bg_color = get_theme_file_uri('assets/img/count-b2.webp');
                                 break;
                         }
                         ?>

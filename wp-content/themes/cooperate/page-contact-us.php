@@ -65,7 +65,7 @@
                             <?php echo __('Need Help?', 'cooperate') ?>
                         </h3>
                     </div>
-                    <div id="form-messages"></div>
+
                     <?php echo do_shortcode('[contact-form-7 id="638" title="Contact-us Form"]') ?>
                 </div>
             </div>

@@ -1,0 +1,34 @@
+2023-06-12 12:07:26
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: C:\Users\Administrator\Local Sites\business\app\public\wp-content/ewww/
+plugin (resource) content_dir: C:\Users\Administrator\Local Sites\business\app\public\wp-content/ewww/
+home url: https://business.local/
+relative home url: //business.local/
+home domain: business.local
+site/upload url: https://business.local
+site/upload domain: business.local
+upload_url: https://business.local/wp-content/uploads/
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+<b>EWWW\Local::skip_tools()</b>
+enabled: cwebp
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>ewww_image_optimizer_init()</b>
+checking active plugins
+<b>EWWW\Lazy_Load::__construct()</b>
+request uri is /wp-admin/admin-ajax.php?action=wp_ewwwio_test_optimize&nonce=73efc4aaf3&
+is_admin
+<b>EWWW\Tracking::schedule_send()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>EWWW\Plugin::register_settings()</b>
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+doing wp_ewwwio_test_optimize
+<b>EWWWIO_Test_Optimize_Handler::handle()</b>

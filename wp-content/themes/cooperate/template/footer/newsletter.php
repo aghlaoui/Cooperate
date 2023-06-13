@@ -8,11 +8,10 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="newsletter-form">
-                        <input class="newsletter-input" type="email" name="EMAIL" placeholder="Email Address" required="">
-                        <input class="newsletter-button" type="submit" value="Subscribe Now">
-                        <i class="ri-arrow-right-up-line"></i>
-                    </div>
+                    <?php
+                    global $wp;
+                    echo do_shortcode('[newsletter_form form="1" confirmation_url="' . home_url($wp->request) . '"]');
+                    ?>
                 </div>
             </div>
         </div>

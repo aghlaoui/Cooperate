@@ -2,6 +2,7 @@
 add_action('wp_enqueue_scripts', 'cooperate_scripts');
 function cooperate_scripts()
 {
+
     /************************* General Styles Plugins ************************* */
     wp_enqueue_style('bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', array(), false, '');
     wp_enqueue_style('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -18,6 +19,7 @@ function cooperate_scripts()
 
     wp_enqueue_style('general', get_theme_file_uri('/build/css/generalS.css'));
     wp_enqueue_style('header', get_theme_file_uri('build/css/headerS.css'));
+
 
     if (is_front_page()) {
         // Home Page
@@ -74,6 +76,8 @@ function cooperate_scripts()
     } elseif (is_page('contact-us')) {
         // Contact-us Page
         wp_enqueue_style('Contact', get_theme_file_uri('build/css/contactS.css'));
+
+        wp_enqueue_script('contactJs', get_theme_file_uri('build/contactJs.js'), array(), '', true);
     } elseif (is_page('partners')) {
         // Partners Page
         wp_enqueue_style('Partners', get_theme_file_uri('build/css/partnersS.css'));
@@ -85,17 +89,22 @@ function cooperate_scripts()
         wp_enqueue_script('bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js', array(), '', true);
 
         wp_enqueue_script('faqScript', get_theme_file_uri('build/faqJs.js'), array(), '', true);
+    } elseif (is_404()) {
+        // 404 ot found page
+        wp_enqueue_style('not-found', get_theme_file_uri('assets/splited-code/css/404.scss'));
+
+        wp_enqueue_script('gasp', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js', array(), '', true);
+        wp_enqueue_script('nou-found', get_theme_file_uri('build/notFoundJs.js'), array(), '', true);
     }
 
     if (!is_front_page()  && !is_404()) {
         wp_enqueue_style('breadcrumb', get_theme_file_uri('build/css/breadcrumbS.css'));
     }
+
     // General Script
     wp_enqueue_script('genral', get_theme_file_uri('build/generalJs.js'), array(), '', true);
 
     wp_enqueue_style('responsive', get_theme_file_uri('build/css/responsive.css'));
-    // wp_enqueue_style('flaticonpc', '//cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css');
-    // wp_enqueue_style('flaticonSolidRound', '//cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
 }
 
 function enqueue_custom_admin_style()

@@ -13,13 +13,14 @@
     <div class="offwrap"></div>
 
     <!--Preloader start here-->
-    <div id="pre-load">
+    <!-- <div id="pre-load">
         <div id="loader" class="loader">
             <div class="loader-container">
-                <div class="loader-icon"><img src="<?php echo esc_url(get_site_icon_url()) ?>" alt="Bcom - Consulting Business HTML Template "></div>
+                <div class="loader-icon"><img src="<?php //echo esc_url(get_site_icon_url()) 
+                                                    ?>" alt="Preloader"></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--Preloader area end here-->
 
     <!-- Main content Start -->

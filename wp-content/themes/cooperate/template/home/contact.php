@@ -1,6 +1,6 @@
 <?php $id = $args['id'] ?>
 
-<div class="rs-contact contact-style7 bg24 pt-135 pb-140 md-pt-75 md-pb-80" style="background-image: url(<?php echo get_theme_file_uri('assets/img/contact-bg11.jpg') ?>);">
+<div class="rs-contact contact-style7 bg24 pt-135 pb-140 md-pt-75 md-pb-80" style="background-image: url(<?php echo get_theme_file_uri('assets/img/contact-bg11.webp') ?>);">
     <div class="container custom10">
         <div class="row">
             <div class="col-lg-7 md-mb-50">
@@ -11,7 +11,7 @@
                 </div>
                 <div class="row y-middle">
                     <div class="col-lg-8">
-                        <div class="icon-box-wrapper" style="background-image: url(<?php echo get_theme_file_uri('assets/img/opening-time.png') ?>);">
+                        <div class="icon-box-wrapper" style="background-image: url(<?php echo get_theme_file_uri('assets/img/opening-time.webp') ?>);">
                             <div class="sec-title mb-30">
                                 <h5 class="title title2 white-color">
                                     <?php echo __('Opening Times', 'cooperate') ?>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="arrow-icon">
-                            <img src="<?php echo get_theme_file_uri('assets/img/contact-arrow.png') ?>" alt="Images">
+                            <img src="<?php echo get_theme_file_uri('assets/img/contact-arrow.webp') ?>" alt="Images">
                         </div>
                     </div>
                 </div>

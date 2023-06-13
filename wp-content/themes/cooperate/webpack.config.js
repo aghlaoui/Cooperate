@@ -22,7 +22,8 @@ const entry = {
     pricingJs: JS_DIR + '/splited-code/js/pricing.js',
     singleProjectJs: JS_DIR + '/splited-code/js/single-project.js',
     singleServiceJs: JS_DIR + '/splited-code/js/single-service.js',
-
+    notFoundJs: JS_DIR + '/splited-code/js/404.js',
+    contactJs: JS_DIR + '/splited-code/js/contact.js',
     // CSS Files
     aboutS: JS_DIR + '/splited-code/css/about.js',
     blogS: JS_DIR + '/splited-code/css/blog.js',
@@ -41,8 +42,7 @@ const entry = {
     singleServiceS: JS_DIR + '/splited-code/css/single-service.js',
     responsive: JS_DIR + '/splited-code/css/responsive.js',
     spacing: JS_DIR + '/splited-code/css/rs-spacing.js',
-    flaticon: JS_DIR + '/splited-code/fonts/flaticon.js'
-
+    flaticon: JS_DIR + '/splited-code/fonts/flaticon.js',
 }
 const output = {
     path: BUILD_DIR,
@@ -77,40 +77,15 @@ const rules = [
     },
     {
         test: /\.eot(\?v=\d+.\d+.\d+)?$/,
-        use: [
-            {
-                loader: 'url-loader',
-                options: {
-                    name: '[path][name].[ext]',
-                },
-            },
-        ],
+        type: 'asset/resource',
     },
     {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: [
-            {
-                loader: 'url-loader',
-                options: {
-                    limit: 10000,
-                    mimetype: 'application/font-woff',
-                    name: '[path][name].[ext]',
-                },
-            },
-        ],
+        type: 'asset/resource',
     },
     {
         test: /\.[ot]tf(\?v=\d+.\d+.\d+)?$/,
-        use: [
-            {
-                loader: 'url-loader',
-                options: {
-                    limit: 10000,
-                    mimetype: 'application/octet-stream',
-                    name: '[path][name].[ext]',
-                },
-            },
-        ],
+        type: 'asset/resource',
     },
     {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
@@ -144,7 +119,7 @@ const rules = [
     {
         test: /\.(jpe?g|svg|png|gif|ico|eot|woff2?)(\?v=\d+\.\d+\.\d+)?$/i,
         type: 'asset/resource',
-    },
+    }
 
 ]
 const plugins = (argv) => [

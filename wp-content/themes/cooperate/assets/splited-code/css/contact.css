@@ -107,3 +107,12 @@
     width: 100%;
     border: none;
 }
+
+.wpcf7-response-output {
+    padding: 20px;
+    text-align: center;
+    margin-top: 13px;
+    border: 1px solid #fff;
+    border-radius: 1.5rem;
+    color: #fff;
+}

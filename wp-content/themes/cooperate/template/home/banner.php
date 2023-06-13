@@ -1,6 +1,6 @@
 <?php $id = $args['id'] ?>
 <?php if (get_field('home_banner_activate_section', $id)) :  ?>
-    <div class="rs-cta cta-main-home cta-style6 bg21 pt-100 pb-100 md-pt-80 md-pb-80" style="background-image: url(<?php echo get_theme_file_uri('assets/img/cta-bg3.jpg') ?>);">
+    <div class="rs-cta cta-main-home cta-style6 bg21 pt-100 pb-100 md-pt-80 md-pb-80" style="background-image: url(<?php echo get_theme_file_uri('assets/img/cta-bg3.webp') ?>);">
         <div class="container custom10">
             <div class="row y-middle">
                 <div class="col-lg-7 md-mb-30">

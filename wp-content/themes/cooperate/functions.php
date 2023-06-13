@@ -106,15 +106,16 @@ function cooperate_features()
 add_filter('show_admin_bar', '__return_false');
 
 if (function_exists('fly_add_image_size')) {
-    fly_add_image_size('home_page_square', 500, 500, true);
-    fly_add_image_size('home_page_square_2x', 1000, 1000, true);
-    fly_add_image_size('cropped_top_left', 1000, 1000, true);
+    // partners
     fly_add_image_size('parners', 120, 26, false);
     fly_add_image_size('partners990', 248, 54, false);
     fly_add_image_size('partners766', 158, 34, false);
 
     fly_add_image_size('parnersP990', 268, 58, false);
     fly_add_image_size('partnersP765', 198, 43, false);
+    // Logo 
+    fly_add_image_size('logoHeader', 133, 38, false);
+    fly_add_image_size('logoHeader1200', 105, 30, false);
 }
 /**
  * Ignore SLL Verification
@@ -219,7 +220,13 @@ function limit_image_sizes($sizes)
 
     return $sizes;
 }
+add_filter('generate_show_entry_header', function ($show) {
+    if (is_front_page()) {
+        $show = false;
+    }
 
+    return $show;
+});
 /**
  * Default Values
  */
