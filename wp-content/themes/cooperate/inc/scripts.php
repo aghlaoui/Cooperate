@@ -51,8 +51,9 @@ function cooperate_scripts()
         wp_enqueue_script('jquery-magnific-popup', '//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.1/jquery.magnific-popup.min.js', array(), '', true);
 
         wp_enqueue_script('single-projectScript', get_theme_file_uri('build/singleProjectJs.js'), array(), '', true);
-    } elseif (is_home() || is_page('blogs') || is_category() || is_tag() || is_search()) {
+    } elseif (is_home() || is_page('blogs') || is_category() || is_tag() || is_search() || is_author()) {
         // Blog Archive (posts, category,tag)
+
         wp_enqueue_style('Blog', get_theme_file_uri('build/css/blogS.css'));
     } elseif (is_single() && get_post_type() == 'post') {
         // Single Post

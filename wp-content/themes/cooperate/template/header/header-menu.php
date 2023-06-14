@@ -59,7 +59,7 @@
                 <div class="expand-btn-inner">
                     <ul>
                         <li class="search-parent">
-                            <a class="hidden-xs rs-search" href="javascript:void(0)">
+                            <a class="hidden-xs rs-search" href="javascript:void(0)" aria-label="Search for something in the website">
                                 <i class="ri-search-line"></i>
                             </a>
                             <div class="sticky_form">
@@ -75,9 +75,10 @@
 
                         <li class="address-box">
                             <div class="address-item">
-                                <div class="address-icon">
-                                    <img src="<?php echo get_theme_file_uri('assets/img/bubble-chat-1.webp') ?>" alt="">
-                                </div>
+                                <!-- <div class="address-icon">
+                                    <img src="<?php //echo get_theme_file_uri('assets/img/bubble-chat-1.webp') 
+                                                ?>" alt="">
+                                </div> -->
                                 <div class="address-text">
                                     <span class="label"><?php __('Free Consultancy', 'cooperate') ?></span>
                                     <?php

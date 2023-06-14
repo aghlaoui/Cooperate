@@ -356,3 +356,99 @@
     margin-right: 26px;
     line-height: normal;
 }
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap {
+    transition: all 500ms ease;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .image-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .image-wrap a img {
+    transition: all 0.5s ease 0s;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content {
+    text-align: left;
+    padding: 35px 35px 40px;
+    box-shadow: 0 5px 20px rgba(34, 34, 34, 0.03);
+    background: #fff;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content .blog-meta {
+    display: flex;
+    margin: 4px 0px 0px;
+    padding: 0 0 15px;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content .blog-meta .categories {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #3e3e3e;
+    margin-right: 45px;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content .blog-meta .categories i {
+    color: #126ee8;
+    margin-right: 6px;
+    font-weight: 900;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content .blog-meta .categories i:before {
+    top: -1px;
+    position: relative;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content .blog-meta .categories:after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 12px;
+    height: 7px;
+    width: 1px;
+    background: rgba(62, 62, 62, 0.3);
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content .blog-meta .admin {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #3e3e3e;
+    display: block;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content .blog-meta .admin i {
+    color: #126ee8;
+    margin-right: 6px;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content .blog-meta .admin i:before {
+    top: -1px;
+    position: relative;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content .blog-meta .admin a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3e3e3e;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content .blog-title {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    margin: 0 0 27px;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap .blog-content .blog-title a {
+    color: #080d41;
+}
+
+.rs-blog.blog-style4 .blog-item .blog-inner-wrap:hover .image-wrap a img {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}

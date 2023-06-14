@@ -20,7 +20,7 @@
                                 <div class="blog-content">
                                     <ul class="blog-meta">
                                         <li><?php echo get_the_date('F d,Y') ?></li>
-                                        <li><a href="<?php echo esc_url(get_the_author_posts_link()) ?>"><?php echo sanitize_text_field(get_the_author()) ?></a></li>
+                                        <li><a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))) ?>"><?php echo sanitize_text_field(get_the_author()) ?></a></li>
                                     </ul>
                                     <h5 class="blog-title">
                                         <a href="<?php echo esc_url(get_the_permalink()) ?>"><?php echo sanitize_text_field(get_the_title()) ?></a>
