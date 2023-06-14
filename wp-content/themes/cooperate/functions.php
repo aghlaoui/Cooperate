@@ -48,9 +48,6 @@ function cooperate_features()
     add_image_size('parners', 120, 26, false);
     add_image_size('partners990', 248, 54, false);
     add_image_size('partners766', 158, 34, false);
-
-    add_image_size('parnersP990', 268, 58, false);
-    add_image_size('partnersP765', 198, 43, false);
     // Single Service
     add_image_size('serviceParagraph', 854, 449, true);
     add_image_size('serviceParagraph1200', 616, 324, true);
@@ -177,49 +174,7 @@ add_filter('wpcf7_form_elements', function ($content) {
     return $content;
 });
 
-add_filter('intermediate_image_sizes_advanced', 'limit_image_sizes');
 
-function limit_image_sizes($sizes)
-{
-    // Get the current post or custom field ID
-    $post_id = get_the_ID(); // Replace with the appropriate way to get the post ID or custom field ID
-    $repeater_field_name = 'partners';
-    $repeater_row_index = 0; // Replace with the desired row index
-
-    $repeater_field = get_field($repeater_field_name, 'option');
-    $field = get_field_object('image', $repeater_field[$repeater_row_index]);
-    $field_id = $field['ID'];
-
-
-    // Check if the image is from the "home_image" custom field
-    if (get_post_meta($field_id, 'home_image', true)) {
-        // Disable all default image sizes
-        $sizes = array();
-
-        // Enable only the required image sizes
-        // add_image_size('parners', 120, 26, false);
-        // add_image_size('partners990', 248, 54, false);
-        // add_image_size('partners766', 158, 34, false);
-
-        // add_image_size('parnersP990', 268, 58, false);
-        // add_image_size('partnersP765', 198, 43, false);
-
-        $enabled_sizes = array(
-            'parners',
-            'partners990',
-            // Add other enabled image sizes here
-        );
-
-        // Add the enabled sizes to the list
-        foreach ($enabled_sizes as $size) {
-            if (isset($_wp_additional_image_sizes[$size])) {
-                $sizes[$size] = $_wp_additional_image_sizes[$size];
-            }
-        }
-    }
-
-    return $sizes;
-}
 add_filter('generate_show_entry_header', function ($show) {
     if (is_front_page()) {
         $show = false;

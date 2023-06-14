@@ -2,7 +2,6 @@
 <html lang="zxx">
 
 <head>
-    <meta name="description" content="">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head() ?>

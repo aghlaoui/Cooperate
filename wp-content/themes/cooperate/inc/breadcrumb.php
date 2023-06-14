@@ -127,8 +127,8 @@ function pageBanner()
         $description = (get_field('sb_description', 'option')) ? sanitize_text_field(get_field('sb_description', 'option')) : '';
         $image = (get_field('sb_image', 'option')) ? esc_url(get_field('sb_image', 'option')['url']) : $default_image;
     } elseif (is_archive() || is_single() || is_home()) {
-        $init_post_types = array('portfolio' => 'pb', 'posts' => 'pob', 'services' => 'sb');
-        $post_type = strtolower(get_post_type_object(get_post_type())->label);
+        $init_post_types = array('portfolio' => 'pb', 'post' => 'pob', 'service' => 'sb');
+        $post_type = strtolower(get_post_type_object(get_post_type())->name);
 
         $title = sanitize_text_field(ucfirst($post_type));
         $description = (get_field($init_post_types[$post_type] . '_description', 'option')) ? sanitize_text_field(get_field($init_post_types[$post_type] . '_description', 'option')) : '';

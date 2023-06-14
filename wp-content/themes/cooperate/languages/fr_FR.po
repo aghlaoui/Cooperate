@@ -1,0 +1,323 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cooperate\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-14 13:32+0000\n"
+"PO-Revision-Date: 2023-06-14 13:43+0000\n"
+"Last-Translator: zakarya\n"
+"Language-Team: French (France)\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.2.2\n"
+"X-Domain: cooperate"
+
+#: template/blog/sidebar/banner.php:28
+msgid "Call for anytime if<br>emergency"
+msgstr "Appeler à tout moment<br>en cas d'urgence"
+
+#: page-contact-us.php:53
+msgid "Call Us"
+msgstr "Appelez-nous"
+
+#: template/blog/sidebar/categories.php:2
+msgid "Categories"
+msgstr "Catégories"
+
+#: inc/customizer/details.php:4
+msgid "Contact details"
+msgstr "Coordonnées de la personne à contacter"
+
+#: template/footer/footer-top.php:53
+msgid "Contact Information"
+msgstr "Informations sur le contact"
+
+#: template/home/slider.php:65 template/blog/sidebar/banner.php:31
+msgid "Contact Us"
+msgstr "Nous contacter"
+
+#: template/home/contact.php:51
+msgid "Contact With Us"
+msgstr "Nous contacter"
+
+#: archive.php:82 index.php:80 page-blogs.php:89
+msgid "Continue Reading"
+msgstr "Lire la suite"
+
+#. Name of the theme
+msgid "Cooperate"
+msgstr ""
+
+#. Description of the theme
+msgid "Cooperate it's a business Theme"
+msgstr "Coopérer, c'est un thème commercial"
+
+#: template/home/slider.php:61
+msgid "Discover Now"
+msgstr "Découvrir maintenant"
+
+#: comments.php:36
+msgid "E-Mail"
+msgstr ""
+
+#: page-contact-us.php:40
+msgid "E-mail"
+msgstr ""
+
+#: inc/customizer/logo.php:6
+msgid "Edit description and logo"
+msgstr "Modifier la description et le logo"
+
+#: inc/customizer/details.php:34
+msgid "Email adresse"
+msgstr ""
+
+#: template/header/header-top.php:8
+msgid "Follow Us :"
+msgstr "Suivez-nous :"
+
+#: template/header/header-menu.php:83
+msgid "Free Consultancy"
+msgstr "Consultation gratuite"
+
+#: template/service/single/sidebar/document.php:8
+msgid "Free Download"
+msgstr "Téléchargement gratuit"
+
+#: template/pricing/plans.php:98
+msgid "Get Started"
+msgstr "Commencer"
+
+#: template/faq/questions.php:12
+msgid "Have any questions?"
+msgstr "Vous avez des questions ?"
+
+#: 404.php:213
+msgid "HOME"
+msgstr "ACCUEIL"
+
+#. Author URI of the theme
+msgid "https://zakaryaaghlaoui.com/"
+msgstr ""
+
+#: comments.php:39
+msgid "Leave a comment:"
+msgstr "Laissez un commentaire :"
+
+#: template/blog/sidebar/banner.php:27
+msgid "Let’s Talk"
+msgstr "Discutons-en"
+
+#: page-contact-us.php:27
+msgid "Location"
+msgstr "Localisation"
+
+#: inc/customizer/logo.php:32
+msgid "Logo Footer"
+msgstr ""
+
+#: inc/customizer/logo.php:26
+msgid "Logo Navbar"
+msgstr ""
+
+#: template/faq/questions.php:45
+msgid "More Questions?"
+msgstr "D'autres questions ?"
+
+#: comments.php:35
+msgid "Name"
+msgstr "Nom"
+
+#: page-contact-us.php:65
+msgid "Need Help?"
+msgstr "Besoin d'aide ?"
+
+#: inc/costum_functions.php:30
+msgid "Next"
+msgstr "Suivant"
+
+#: template/blog/sidebar/categories.php:25
+msgid "No Categories Available"
+msgstr "Aucune catégorie disponible"
+
+#: template/portfolio/goals.php:35 template/portfolio/outcome.php:79
+msgid "No Content Available"
+msgstr "Pas de contenu disponible"
+
+#: template/portfolio/about.php:92
+msgid "No Information About The Project"
+msgstr "Aucune information sur le projet"
+
+#: front-page.php:57 page-faq.php:29
+msgid "No Plans Available"
+msgstr "Aucun plan disponible"
+
+#: index.php:97 page-blogs.php:105 template/blog/sidebar/recent-posts.php:43
+msgid "No Posts Available!"
+msgstr "Aucun poste disponible !"
+
+#: archive-portfolio.php:62
+msgid "No Projects Are Available"
+msgstr "Aucun projet n'est disponible"
+
+#: taxonomy-project_category.php:65
+msgid "No Projects Are Available in: "
+msgstr "Aucun projet n'est disponible en : "
+
+#: search.php:20
+msgid "No Result Found"
+msgstr "Aucun résultat trouvé"
+
+#: template/blog/sidebar/tags.php:25
+msgid "No Tags Available"
+msgstr "Aucune étiquette disponible"
+
+#: inc/customizer/details.php:45
+msgid "Office adress"
+msgstr "Adresse du bureau"
+
+#: template/home/contact.php:17
+msgid "Opening Times"
+msgstr "Horaires d'ouverture"
+
+#: template/home/projects.php:7
+msgid "Our completed projects"
+msgstr "Nos projets réalisés"
+
+#: template/service/single/sidebar/services.php:2
+msgid "Our Services"
+msgstr "Nos services"
+
+#: inc/customizer/details.php:25
+msgid "Phone number"
+msgstr "Numéro de téléphone"
+
+#: inc/acf-functions/options.php:16 inc/acf-functions/options.php:17
+msgid "Porfolio Settings"
+msgstr "Paramètres du portefeuille"
+
+#: comments.php:40
+msgid "Post Comment"
+msgstr "Poster un commentaire"
+
+#: inc/acf-functions/options.php:23 inc/acf-functions/options.php:24
+msgid "Posts Settings"
+msgstr "Paramètres des posts"
+
+#: inc/costum_functions.php:20
+msgid "Previous"
+msgstr "Précédent"
+
+#: inc/acf-functions/options.php:38 inc/acf-functions/options.php:39
+msgid "Pricing Settings"
+msgstr "Paramètres de tarification"
+
+#: template/portfolio/about.php:55
+msgid "Project information"
+msgstr "Informations sur le projet"
+
+#: template/home/about.php:93 template/search/search-post.php:37
+#: template/service/archive/list-services.php:57
+#: template/service/archive/tab-services.php:79
+msgid "Read More"
+msgstr "Lire la suite"
+
+#: comments.php:23
+msgid "Recent Comments:"
+msgstr "Commentaires récents :"
+
+#: template/blog/sidebar/recent-posts.php:2
+msgid "Recent Posts"
+msgstr "Posts récents"
+
+#: template/header/header-menu.php:68
+msgid "Search for: "
+msgstr "Recherche de : "
+
+#: inc/breadcrumb.php:137
+msgid "Search results for: "
+msgstr "Résultats de la recherche pour : "
+
+#: template/header/header-menu.php:69
+msgid "Searching..."
+msgstr "Recherche..."
+
+#: text.php:30
+msgid "Send Inquiry"
+msgstr "Envoyer la demande"
+
+#: inc/acf-functions/options.php:9 inc/acf-functions/options.php:10
+msgid "Services Settings"
+msgstr "Paramètres des services"
+
+#: template/pricing/plans.php:6
+msgid "Simple pricing for you."
+msgstr "Une tarification simple pour vous."
+
+#: inc/customizer/logo.php:37
+msgid "Site description"
+msgstr "Description du site"
+
+#: inc/customizer/logo.php:5
+msgid "Site Details"
+msgstr "Détails du site"
+
+#: inc/acf-functions/options.php:30 inc/acf-functions/options.php:31
+msgid "Site Settings"
+msgstr "Paramètres du site"
+
+#: template/blog/sidebar/tags.php:2
+msgid "Tags"
+msgstr "Étiquettes"
+
+#: single.php:72
+msgid "Tags:"
+msgstr "Étiquettes:"
+
+#: 404.php:211
+msgid ""
+"The page you are looking for does not exist. How you got here is a mystery. "
+"But you can click the button below to go back to the homepage."
+msgstr ""
+"La page que vous recherchez n'existe pas. La façon dont vous êtes arrivé ici "
+"est un mystère. Mais vous pouvez cliquer sur le bouton ci-dessous pour "
+"revenir à la page d'accueil."
+
+#: single-service.php:65
+msgid "The Service Has No Content"
+msgstr "Le service n'a pas de contenu"
+
+#: 404.php:209
+msgid "UH OH! You're lost."
+msgstr "UH OH ! Vous êtes perdu."
+
+#: page-partners.php:8
+msgid "Valued Partners"
+msgstr "Partenaires appréciés"
+
+#: template/service/archive/partners.php:11
+msgid "View Partners"
+msgstr "Voir les partenaires"
+
+#: template/search/search-portfolio.php:34
+msgid "View Project"
+msgstr "Voir le projet"
+
+#: template/search/search-service.php:34
+msgid "View Service"
+msgstr "Voir le service"
+
+#: template/home/blog.php:6
+msgid "What is the latest?"
+msgstr "Quelles sont les dernières nouvelles ?"
+
+#: comments.php:38
+msgid "Your message Here"
+msgstr "Votre message Ici"
+
+#. Author of the theme
+msgid "Zakarya AGHLAOUI"
+msgstr ""
