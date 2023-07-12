@@ -10,7 +10,7 @@ function cooperate_scripts()
     wp_enqueue_style('remixicon', '//cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.min.css');
     wp_enqueue_style('flaticon', get_theme_file_uri('build/css/flaticon.css'));
     wp_enqueue_style('rs-spacing', get_theme_file_uri('build/css/spacing.css'));
-    wp_enqueue_style('fonts', '//fonts.googleapis.com/css?family=Public%20Sans:300,400,500,600,700,800,900&amp;display=swap');
+    // wp_enqueue_style('fonts', '//fonts.googleapis.com/css?family=Public%20Sans:300,400,500,600,700,800,900&amp;display=swap');
     /************************* General Scripts Plugins ************************* */
     wp_deregister_script('jquery');
     wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.6.4.min.js', array(), '3.6.4', true);
