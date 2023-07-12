@@ -400,6 +400,8 @@ class NewsletterComposer {
         if (empty($composer['width'])) {
             $composer['width'] = 600;
         }
+        
+        $composer['content_width'] = $composer['width'] - $options['block_padding_left'] - $options['block_padding_right'];
 
         $width = $composer['width'];
         $font_family = 'Helvetica, Arial, sans-serif';

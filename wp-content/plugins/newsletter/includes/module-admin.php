@@ -99,7 +99,6 @@ class NewsletterModuleAdmin extends NewsletterModuleBase {
     function save_options($options, $sub = '', $language = '') {
         update_option($this->get_prefix($sub, $language), $options, true);
         if (empty($sub) && empty($language)) {
-            $this->options = $options;
             if (isset($this->themes) && isset($options['theme'])) {
                 $this->themes->save_options($options['theme'], $options);
             }
@@ -129,11 +128,6 @@ class NewsletterModuleAdmin extends NewsletterModuleBase {
         }
         $old_options = $this->get_options($sub, $language);
         $this->save_options(array_merge($old_options, $options), $sub, null, $language);
-    }
-
-    function backup_options($sub) {
-        $options = $this->get_options($sub);
-        update_option($this->get_prefix($sub) . '_backup', $options, false);
     }
 
     function admin_menu() {
@@ -486,41 +480,7 @@ class NewsletterModuleAdmin extends NewsletterModuleBase {
      */
     function get_profiles_public() {
         return $this->get_customfields_public();
-    }
-
-    /**
-     * @param string $language The language for the list labels (it does not affect the lists returned)
-     * @return TNP_List[]
-     */
-    function get_lists() {
-        static $lists = null;
-
-        if (is_null($lists)) {
-            $options = $this->get_main_options('lists');
-            $lists = TNP_List::build($options);
-        }
-
-        return $lists;
-    }
-
-    /**
-     * Returns an array of TNP_List objects of lists that are public.
-     * @return TNP_List[]
-     */
-    function get_lists_public() {
-        static $lists = null;
-        if ($lists) {
-            return $lists;
-        }
-        $lists = [];
-
-        foreach ($this->get_lists() as $list) {
-            if ($list->is_public()) {
-                $lists['' . $list->id] = $list;
-            }
-        }
-        return $lists;
-    }
+    }   
 
     /**
      * Returns the list object or null if not found.

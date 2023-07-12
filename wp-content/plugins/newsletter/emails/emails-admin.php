@@ -445,7 +445,7 @@ class NewsletterEmailsAdmin extends NewsletterModuleAdmin {
                     __('Read more', 'newsletter') . '</strong></a>.';
         } else {
             $r = Newsletter::instance()->send($email, $users, true);
-            $emails = array();
+            $emails = [];
             foreach ($users as $user) {
                 $emails[] = '<a href="admin.php?page=newsletter_users_edit&id=' . $user->id . '" target="_blank">' . $user->email . '</a>';
             }

@@ -37,52 +37,17 @@ for ($i = 1; $i <= NEWSLETTER_LIST_MAX; $i++) {
 
 $main_options = $this->get_options('lists', '');
 
-//echo json_encode($controls->data, JSON_PRETTY_PRINT);
-//$status = array(0 => 'Private', 1 => 'Only on profile page', 2 => 'Even on subscription forms', '3' => 'Hidden');
 $status = array(0 => __('Private', 'newsletter'), 1 => __('Public', 'newsletter'));
 
 $count = $wpdb->get_row("select " . implode(',', $conditions) . ' from ' . NEWSLETTER_USERS_TABLE);
-
 ?>
 <script>
     jQuery(function () {
         jQuery(".tnp-notes").tooltip({
             content: function () {
-                // That activates the HTML in the tooltip
                 return this.title;
             }
         });
-
-        for (i = 1; i <=<?php echo NEWSLETTER_LIST_MAX ?>; i++) {
-
-            jQuery('#options-list_' + i + '_forced').change(function () {
-                let field = '#' + this.id.replace('forced', 'subscription');
-                let fieldStatus = '#' + this.id.replace('forced', 'status');
-                if (jQuery(fieldStatus).val() === '1') {
-                    jQuery(field).toggle(!this.checked);
-                }
-            });
-            jQuery('#options-list_' + i + '_status').change(function () {
-                let field = '#' + this.id.replace('status', 'subscription');
-                let fieldProfile = '#' + this.id.replace('status', 'profile');
-                let fieldForced = '#' + this.id.replace('status', 'forced');
-                if (this.value === '0') {
-                    jQuery(field).hide();
-                    jQuery(fieldProfile).hide();
-                } else {
-                    if (!jQuery(fieldForced).attr('checked')) {
-                        jQuery(field).show();
-
-                    }
-                    jQuery(fieldProfile).show();
-                }
-            });
-        }
-
-        for (i = 1; i <=<?php echo NEWSLETTER_LIST_MAX ?>; i++) {
-            jQuery('#options-list_' + i + '_status').change();
-            jQuery('#options-list_' + i + '_forced').change();
-        }
     });
 </script>
 <div class="wrap tnp-lists" id="tnp-wrap">

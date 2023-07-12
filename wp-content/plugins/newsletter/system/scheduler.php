@@ -167,16 +167,11 @@ if ($controls->is_action('test')) {
                             <script>
                                 jQuery(function () {
                                     var cronChartData = {
-                                        //labels: <?php echo json_encode(range(1, count($stats->deltas))) ?>,
                                         labels: <?php echo json_encode($stats->deltas_ts) ?>,
                                         datasets: [
                                             {
-                                                label: "Batch Average Time",
-                                                data: <?php
-                        echo json_encode(array_map(function ($v) {
-                                    return $v / 1000;
-                                }, $stats->deltas))
-                        ?>,
+                                                label: "Cron intervals",
+                                                data: <?php echo json_encode($stats->deltas) ?>,
                                                 borderColor: '#2980b9',
                                                 fill: false
                                             }]

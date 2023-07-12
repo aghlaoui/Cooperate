@@ -9,15 +9,21 @@ require_once __DIR__ . '/addon.php';
 require_once __DIR__ . '/mailer.php';
 require_once __DIR__ . '/themes.php';
 
+/**
+ * @property array $options For compatibility, the main module options (magic method).
+ */
 class NewsletterModule extends NewsletterModuleBase {
 
     static $cache = [];
-    var $options; // For compatibility
 
     function __construct($module) {
         parent::__construct($module);
-        
-        $this->options = $this->get_options(); // For compatibility
+    }
+
+    function __get($name) {
+        if ($name === 'options') {
+            return $this->get_options();
+        }
     }
 
     /**
@@ -430,7 +436,7 @@ class NewsletterModule extends NewsletterModuleBase {
         }
         return $user_count;
     }
-    
+
     /**
      * Returns all configured custom fields using the current language.
      * 
@@ -448,19 +454,18 @@ class NewsletterModule extends NewsletterModuleBase {
             for ($i = 1; $i <= NEWSLETTER_PROFILE_MAX; $i++) {
                 $prefix = 'profile_' . $i;
                 if (!empty($main_options[$prefix])) {
-                    $name = empty($options[$prefix])?$main_options[$prefix]:$options[$prefix];
+                    $name = empty($options[$prefix]) ? $main_options[$prefix] : $options[$prefix];
                     $field = new TNP_Profile($i, $name);
                     $field->type = $main_options[$prefix . '_type'];
-                    $values = empty($options[$prefix . '_options'])?$main_options[$prefix . '_options']:$options[$prefix . '_options'];
+                    $values = empty($options[$prefix . '_options']) ? $main_options[$prefix . '_options'] : $options[$prefix . '_options'];
                     $items = array_map('trim', explode(',', $values));
                     $items = array_combine($items, $items);
                     $field->options = $items;
-                    $field->placeholder = empty($options[$prefix . '_placeholder'])?$main_options[$prefix . '_placeholder']:$options[$prefix . '_placeholder'];
+                    $field->placeholder = empty($options[$prefix . '_placeholder']) ? $main_options[$prefix . '_placeholder'] : $options[$prefix . '_placeholder'];
                     $field->rule = $options[$prefix . '_rules'];
                     $field->status = (int) $options[$prefix . '_status'];
                     $customfields['' . $i] = $field;
                 }
-                
             }
         }
         return $customfields;
@@ -510,8 +515,8 @@ class NewsletterModule extends NewsletterModuleBase {
      */
     function get_profiles_public() {
         return $this->get_customfields_public();
-    }    
-    
+    }
+
     /**
      * Return a custom field.
      * @param int $id
@@ -544,25 +549,6 @@ class NewsletterModule extends NewsletterModuleBase {
         }
 
         return $lists;
-    }
-
-    /**
-     * Returns an array of TNP_List objects of lists that are public.
-     * @return TNP_List[]
-     */
-    function get_lists_public() {
-        static $lists = null;
-
-        if (is_null($lists)) {
-            $lists = [];
-            foreach ($this->get_lists() as $list) {
-                if ($list->is_public()) {
-                    $lists['' . $list->id] = $list;
-                }
-            }
-
-            return $lists;
-        }
     }
 
     /**
@@ -806,14 +792,14 @@ class NewsletterModule extends NewsletterModuleBase {
             }
 
             switch ($user->sex) {
-                case 'm': $text = str_replace('{title}', $options_profile['title_male'], $text);
+                case 'm': $text = str_replace('{title}', $this->get_option('title_male', 'form'), $text);
                     break;
-                case 'f': $text = str_replace('{title}', $options_profile['title_female'], $text);
+                case 'f': $text = str_replace('{title}', $this->get_option('title_female', 'form'), $text);
                     break;
                 //case 'n': $text = str_replace('{title}', $options_profile['title_none'], $text);
                 //    break;
                 default:
-                    $text = str_replace('{title}', $options_profile['title_none'], $text);
+                    $text = str_replace('{title}', $this->get_option('title_none', 'form'), $text);
                 //$text = str_replace('{title}', '', $text);
             }
 
@@ -1174,7 +1160,7 @@ class NewsletterModule extends NewsletterModuleBase {
 
         return '[' . $blogname . '] ' . $subject;
     }
-    
+
     /**
      * For compatibility.
      * 

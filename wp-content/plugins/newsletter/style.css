@@ -6,6 +6,7 @@ CUSTOM CSS RULES.
 
 */
 
+div.tnp-subscription, div.tnp-profile,
 form.tnp-subscription, form.tnp-profile {
     display: block;
     margin: 1em auto;

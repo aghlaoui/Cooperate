@@ -9,7 +9,7 @@ if ($theme_id === 'rawhtml' && check_admin_referer('newsletter-new')) {
     $email = array();
     $email['status'] = 'new';
     $email['subject'] = __('Here the email subject', 'newsletter');
-    $email['track'] = Newsletter::instance()->options['track'];
+    $email['track'] = Newsletter::instance()->get_option('track');
     $email['token'] = $this->get_token();
     $email['type'] = 'message';
     $email['send_on'] = time();
@@ -75,7 +75,7 @@ if ($controls->is_action('create')) {
     $email = array();
     $email['status'] = 'new';
     $email['subject'] = __('Here the email subject', 'newsletter');
-    $email['track'] = Newsletter::instance()->options['track'];
+    $email['track'] = Newsletter::instance()->get_option('track');
     $email['message_text'] = '';
     $email['type'] = 'message';
     $email['send_on'] = time();

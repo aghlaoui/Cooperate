@@ -51,7 +51,7 @@ class NewsletterSystemAdmin extends NewsletterModuleAdmin {
         $calls = get_option('newsletter_diagnostic_cron_calls', []);
 
         // Not enough data
-        if (count($calls) < 12) {
+        if (count($calls) < 6) {
             return null;
         }
 
@@ -59,7 +59,7 @@ class NewsletterSystemAdmin extends NewsletterModuleAdmin {
 
         for ($i = 1; $i < count($calls); $i++) {
             $delta = $calls[$i] - $calls[$i - 1];
-            $stats->deltas[] = $delta/1000;
+            $stats->deltas[] = $delta;
             $stats->deltas_ts[] = date('Y-m-d h:i:s', $calls[$i]);
             if ($stats->min > $delta) {
                 $stats->min = $delta;

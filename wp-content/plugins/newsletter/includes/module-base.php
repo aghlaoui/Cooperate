@@ -54,7 +54,7 @@ class NewsletterModuleBase {
     function get_current_language() {
         return $this->language();
     }
-    
+
     /**
      * Gets the locale for the specified language using the available multilanguage plugin
      * (Polylang, WPML, ...).
@@ -80,7 +80,7 @@ class NewsletterModuleBase {
             }
         }
         return '';
-    }    
+    }
 
     function switch_language($language) {
         if ($this->is_multilanguage() && $language && $language !== self::$language) {
@@ -387,6 +387,39 @@ class NewsletterModuleBase {
     }
 
     /**
+     * @param string $language The language for the list labels (it does not affect the lists returned)
+     * @return TNP_List[]
+     */
+    function get_lists() {
+        static $lists = null;
+
+        if (is_null($lists)) {
+            $options = $this->get_main_options('lists');
+            $lists = TNP_List::build($options);
+        }
+
+        return $lists;
+    }
+
+    /**
+     * Returns an array of TNP_List objects of lists that are public.
+     * @return TNP_List[]
+     */
+    function get_lists_public() {
+        static $lists = null;
+
+        if (is_null($lists)) {
+            $lists = [];
+            foreach ($this->get_lists() as $list) {
+                if ($list->is_public()) {
+                    $lists['' . $list->id] = $list;
+                }
+            }
+        }
+        return $lists;
+    }
+
+    /**
      * Create a log entry with the meaningful user data.
      *
      * @global wpdb $wpdb
@@ -503,7 +536,7 @@ class NewsletterModuleBase {
         if ($format == OBJECT) {
             $email->options = maybe_unserialize($email->options);
             if (!is_array($email->options)) {
-                $email->options = array();
+                $email->options = [];
             }
             if (empty($email->query)) {
                 $email->query = "select * from " . NEWSLETTER_USERS_TABLE . " where status='C'";
@@ -511,7 +544,7 @@ class NewsletterModuleBase {
         } else if ($format == ARRAY_A) {
             $email['options'] = maybe_unserialize($email['options']);
             if (!is_array($email['options'])) {
-                $email['options'] = array();
+                $email['options'] = [];
             }
             if (empty($email['query'])) {
                 $email['query'] = "select * from " . NEWSLETTER_USERS_TABLE . " where status='C'";
@@ -643,6 +676,12 @@ class NewsletterModuleBase {
 
             $filters = apply_filters('newsletter_get_posts_filters', $filters, $language);
         }
+        
+        // Fix by B. K. (see ticket 301048)
+        if (empty($filters['orderby'])) {
+            $filters['orderby'] = 'date';
+            $filters['order'] = 'DESC';
+        }
 
         $posts = get_posts($filters);
 
@@ -745,19 +784,20 @@ class NewsletterModuleBase {
 
         return $name;
     }
-    
+
     static function sanitize_name($name) {
         return self::normalize_name($name);
     }
-    
+
     static function sanitize_gender($gender) {
         $gender = trim(strtolower($gender));
-        if (empty($gender)) return 'n';
+        if (empty($gender))
+            return 'n';
         $gender = substr($gender, 0, 1);
         if ($gender !== 'f' && $gender !== 'm') {
             $gender = 'n';
         }
-        return $gender; 
+        return $gender;
     }
 
     static function normalize_sex($sex) {

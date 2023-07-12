@@ -201,6 +201,9 @@ class NewsletterAddon {
         return NewsletterAdmin::instance()->show_email_status_label($email);
     }
 
+    function send_test_email($email, $controls) {
+        NewsletterEmailsAdmin::instance()->send_test_email($email, $controls);
+    }
 }
 
 /**

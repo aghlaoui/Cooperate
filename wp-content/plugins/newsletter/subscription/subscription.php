@@ -109,7 +109,7 @@ class NewsletterSubscription extends NewsletterModule {
                     $this->dienow('Invalid request', 'The subscription request was not made with a HTTP POST', 400);
                 }
 
-                $options_antibot = $this->get_options('antibot');
+                $options_antibot = $this->get_options('antispam');
 
                 $captcha = !empty($options_antibot['captcha']);
 

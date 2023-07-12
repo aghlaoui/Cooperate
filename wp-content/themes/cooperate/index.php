@@ -6,7 +6,7 @@
     <div class="container custom10">
         <div class="row">
             <div class="col-lg-8 md-mb-50 pr-30 md-pr-15">
-                <?php if (have_posts()) : ?>
+                <?php if (!have_posts()) : ?>
                     <?php while (have_posts()) : the_post() ?>
                         <?php
                         $permalink = esc_url(get_the_permalink());

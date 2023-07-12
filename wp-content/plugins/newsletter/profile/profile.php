@@ -219,7 +219,7 @@ class NewsletterProfile extends NewsletterModule {
         // Custom fields
         $profiles = $this->get_customfields_public($user->language);
         foreach ($profiles as $profile) {
-            if (!in_array($profile->id, $options['customfields'])) {
+            if (!in_array($profile->id, $options['profiles'])) {
                 continue;
             }
 

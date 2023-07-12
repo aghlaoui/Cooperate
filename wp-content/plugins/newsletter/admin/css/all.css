@@ -78,7 +78,8 @@
 
 
     --tnp-text: #555;
-    --tnp-title: #333;
+    /*--tnp-title: #333;*/
+    --tnp-title: #1d6da2;
 
     --tnp-font-family: Inter, sans-serif;
 
@@ -1286,7 +1287,7 @@ span.tnp-user-status {
     font-size: 1.2rem;
     line-height: normal;
     vertical-align: middle;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     margin: 0px;
     margin-bottom: .5rem;

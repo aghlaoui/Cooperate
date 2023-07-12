@@ -4,7 +4,7 @@
   Plugin Name: Newsletter
   Plugin URI: https://www.thenewsletterplugin.com/plugins/newsletter
   Description: Newsletter is a cool plugin to create your own subscriber list, to send newsletters, to build your business. <strong>Before update give a look to <a href="https://www.thenewsletterplugin.com/category/release">this page</a> to know what's changed.</strong>
-  Version: 7.8.4
+  Version: 7.8.5
   Author: Stefano Lissa & The Newsletter Team
   Author URI: https://www.thenewsletterplugin.com
   Disclaimer: Use at your own risk. No warranty expressed or implied is provided.
@@ -37,7 +37,7 @@ if (version_compare(phpversion(), '5.6', '<')) {
     return;
 }
 
-define('NEWSLETTER_VERSION', '7.8.4');
+define('NEWSLETTER_VERSION', '7.8.5');
 
 global $newsletter, $wpdb;
 
@@ -90,9 +90,7 @@ class Newsletter extends NewsletterModule {
     var $max_emails = null;
     var $mailer = null;
     var $action = '';
-    private static $instance;
-    // For compatibility
-    var $options;
+    static $instance;
 
     /**
      * @return Newsletter
@@ -117,9 +115,6 @@ class Newsletter extends NewsletterModule {
         $this->time_start = time();
 
         parent::__construct('main');
-
-        // For compatibility
-        $this->options = $this->get_options();
 
         // The main actions of WP during the inizialization phase, in order
         add_action('plugins_loaded', [$this, 'hook_plugins_loaded']);
@@ -249,8 +244,12 @@ class Newsletter extends NewsletterModule {
      */
     function setup_language() {
 
-        self::$is_multilanguage = apply_filters('newsletter_is_multilanguage', class_exists('SitePress') || function_exists('pll_default_language') || class_exists('TRP_Translate_Press'));
-
+        if (defined('NEWSLETTER_LANGUAGE')) {
+            self::$is_multilanguage = true;
+        } else {
+            self::$is_multilanguage = apply_filters('newsletter_is_multilanguage', class_exists('SitePress') || function_exists('pll_default_language') || class_exists('TRP_Translate_Press'));
+        }
+        
         if (self::$is_multilanguage) {
             self::$language = self::_get_current_language();
             self::$locale = self::get_locale(self::$language);
@@ -258,6 +257,10 @@ class Newsletter extends NewsletterModule {
     }
 
     static function _get_current_language() {
+        if (defined('NEWSLETTER_LANGUAGE')) {
+            return NEWSLETTER_LANGUAGE;
+        }
+        
         // WPML
         if (class_exists('SitePress')) {
             $current_language = apply_filters('wpml_current_language', '');

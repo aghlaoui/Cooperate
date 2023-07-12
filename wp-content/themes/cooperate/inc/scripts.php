@@ -110,7 +110,7 @@ function cooperate_scripts()
 
 function enqueue_custom_admin_style()
 {
-    wp_enqueue_style('custom-admin-style', get_template_directory_uri() . '/splited-code/css/admin-styles.css');
+    wp_enqueue_style('custom-admin-style', get_template_directory_uri() . '/assets/splited-code/css/admin-styles.css');
 }
 add_action('admin_enqueue_scripts', 'enqueue_custom_admin_style');
 

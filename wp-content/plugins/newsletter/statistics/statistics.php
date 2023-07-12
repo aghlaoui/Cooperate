@@ -170,7 +170,6 @@ class NewsletterStatistics extends NewsletterModule {
         if (empty($this->relink_key)) {
             $this->relink_key = $this->get_option('key');
         }
-        $this->logger->debug('Relink with token: ' . $email_token);
         $text = preg_replace_callback('/(<[aA][^>]+href[\s]*=[\s]*["\'])([^>"\']+)(["\'][^>]*>)(.*?)(<\/[Aa]>)/is', array($this, 'relink_callback'), $text);
 
         $signature = md5($email_id . $user_id . $email_token);
